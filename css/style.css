@@ -1,0 +1,74 @@
+/*
+    here we need to set the same font for the whole page + we need to ignore the default margin for the body
+*/
+body{
+    margin : 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*header*/
+#general-info{
+    margin-top: 0;
+    height: 250px;
+    background-color: #374458;
+    padding: 40px; /* 40 padding to keep a distance between the borders and the content */
+    box-sizing: border-box; /* when we set the padding , the header size increased .. we need to set the box-sizz to border-box to prevent 
+                                the heigth from increasing ..  box-sizing property allows us to include the padding and border in an element's total width and height. */
+    width: 100%;
+    transition-duration: 1s; /* set the animation duration to 1s */
+}
+
+#general-info:hover{ 
+    /*when hovering : set the padding to 60px and add a border to the element*/
+    border-bottom: 5px solid black;
+    padding: 60px;
+}
+
+#general-info h1{
+    /* every h1,h2...,h6 element has a default margin-top .. wen need to set it to 0 so we can remove the white space on the top */
+    margin-top: 0;
+}
+
+.info{
+    /*display: inline-block does not add a line-break after the element, so the element can sit next to other elements.*/
+    display: inline-block;
+}
+
+#general-info img{
+    /*rounded effect of the img*/
+    border-radius: 100px;
+}
+
+#myPic{
+    float: right;
+}
+
+#main{
+    padding: 100px;
+}
+
+.year-info p{
+    /*every p element inside a .year-info element should have a font-size equal to 13px and a 60px margin top*/
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.dep,.year-info strong{
+    /* set the font-size of .dep and strong located inside a .year-info */
+    font-size: 16px;
+}
+
+.exp{
+    margin-top: 50px;
+    width: 70%;
+}
+
+.skill{
+    display: inline-block;
+    color: dimgray;
+    background-color: #2dbcad;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
